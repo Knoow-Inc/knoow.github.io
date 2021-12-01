@@ -21,9 +21,9 @@ Always include partner tracking on all deeplinks to the Knoow app by specifying 
 
 This link will take the user directly to the question posting screen within the Knoow app.
 
-There are four required parameters: `latitude`, `longitude`, `questionTypeId`, and `partner`.
+There are four required parameters: `question`, `latitude`, `longitude`, `questionTypeId`, and `partner`.
 
-Example: `https://links.knoow.co/question?latitude=40.748400&longitude=-73.985700&questionTypeId=1&partner=YOUR_CLIENT_ID`
+Example: `https://links.knoow.co/question?question=is%20it%20busy&latitude=40.748400&longitude=-73.985700&questionTypeId=1&partner=YOUR_CLIENT_ID`
 
 Currently, Universal Links support the following question type ids:
 
