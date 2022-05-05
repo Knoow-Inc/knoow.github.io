@@ -23,6 +23,19 @@ In order to authenticate wth our Question & Answer API, you must provide a valid
 
 Partner Id and Signing secrets will be sent directly to your engineering team. 
 
+**Example SHA256 Signature**
+```
+const requestData = {
+      latitude: '40.8038129',
+      longitude: '-73.9534146',
+      questionText: 'How long is the wait to get in?',
+    };
+    const dataSignature = JSON.stringify(requestData).trim();
+    const signature = crypto.createHmac('sha256', secret).update(data).digest('hex');
+    console.log(signature)
+    // Should produce d77ad11e143759e35d82639a322d84b941c1b52b9a9eda5bfa24214dd398a1f4
+```
+
 # Available Endpoints
   - [Post a Question](#post-a-question)
   - [Fetch an Answer](#fetch-an-answer)
