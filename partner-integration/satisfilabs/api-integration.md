@@ -25,6 +25,7 @@ Partner Id and Signing secrets will be sent directly to your engineering team.
 
 **Example SHA256 Signature**
 ```
+const secret = 'D9WTHq9YfvfiJLZsfgOCARt'
 const requestData = {
       latitude: '40.8038129',
       longitude: '-73.9534146',
