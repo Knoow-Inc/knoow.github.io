@@ -51,7 +51,7 @@ To query our Knoower community, you must post a post a new question to our API b
 **Example Request**
 
 ```
-curl --location --request POST 'http://test.api.knoow.co/api/v2/questions' \
+curl --location --request POST 'http://test-api.knoow.co/api/v2/questions' \
 --header 'x-signature: <SHA256_SIGNATURE>' \
 --header 'x-partner-id: <PARTNER_ID>' \
 --header 'Content-Type: application/json' \
@@ -246,7 +246,7 @@ The `questionId` route parameter is the `content_id` of the [Post A Question](#p
 **Example Request**
 
 ```
-curl --location --request GET 'http://test.api.knoow.co/api/v1/questions/5342' \
+curl --location --request GET 'http://test-api.knoow.co/api/v1/questions/5342' \
 --header 'x-signature: <SHA256_SIGNATURE>' \
 --header 'x-partner-id: <PARTNER_ID>' \
 --header 'Content-Type: application/json' \
